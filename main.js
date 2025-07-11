@@ -17,7 +17,7 @@ let cameraControl = false;
 //#endregion
 
 //#region Shapes setup
-const texture = new THREE.TextureLoader().load('public/Texture.jpg');
+const texture = new THREE.TextureLoader().load(`${import.meta.env.BASE_URL}/Texture.jpg`);
 
 const planeGeometry = new THREE.PlaneGeometry(10, 10, 10, 10);
 const planeMaterial = new THREE.MeshBasicMaterial({map: texture});
