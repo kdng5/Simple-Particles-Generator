@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body
+			{
+				font-family: monospace;
+				background-color: black;
+				color: white;
+				margin: 0;
+				overflow: hidden;
+			}
+
+			#info
+			{
+				position: absolute;
+				top: 10px;
+				width: 100%;
+				text-align: center;
+			}
+
+			.pinkButton {
+				background: linear-gradient(135deg, #ff7eb3, #ff758c);
+				padding: 15px 30px;
+				font-size: 18px;
+				font-weight: bold;
+				color: white;
+				border-radius: 30px;
+				cursor: pointer;
+				box-shadow: 0 4px 10px rgba(255, 117, 140, 0.4);
+				position: fixed;
+				bottom: 20px;
+			}
+
+			#cameraButton
+			{
+				left: 25%;
+				transform: translateX(-50%);
+			}
+
+			#resetSkyButton
+			{
+				right: 25%;
+				transform: translateX(50%);
+			}
+
+			#animateButton
+			{
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="info">
+			<h1>Z - Toss shape</h1>
+			<h1>X - Toggle wireframe</h1>
+			<h1>C - Change shape</h1>
+		</div>
+		<button class="pinkButton" id="cameraButton">Toggle Camera Controls</button>
+		<button class="pinkButton" id="resetSkyButton">Clear Tossed Shapes</button>
+		<button class="pinkButton" id="animateButton">Animate Shapes</button>
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
